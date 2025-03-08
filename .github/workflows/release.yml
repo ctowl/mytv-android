@@ -11,10 +11,10 @@ jobs:
     steps:
       - name: Checkout the repository with the JSON file
         uses: actions/checkout@v2
-        with:
-          repository: minyoad/mytv-android-update  # 替换为目标仓库
-          token: ${{ secrets.GITHUB_TOKEN }}
-          path: json-repo  # 将目标仓库检出到 json-repo 文件夹
+       # with:
+        #  repository: minyoad/mytv-android-update  # 替换为目标仓库
+        #  token: ${{ secrets.GITHUB_TOKEN }}
+        #  path: json-repo  # 将目标仓库检出到 json-repo 文件夹
 
       - name: Get release information
         id: get_release_info
